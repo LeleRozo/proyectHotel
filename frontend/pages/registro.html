@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/registro.css" />
   </head>
   <body>
-    <h2 id="tit2">REGISTRO</h2>
-    <div id="formularioR">
-      <form id="registro" action="http://localhost:3000/registro" method="post">
+    <div class="container">
+    <h2>REGISTRO</h2>
+      <form class="formularioR" id="formRegistro" action="http://localhost:3000/registro" method="post">
         <input type="text" name="nombre" placeholder="Nombres" />
         <input type="text" name="apellidos" placeholder="Apellidos" />
         <input type="text" name="telefono" placeholder="Telefono" />
         <input type="text" name="usuario" placeholder="Usuario" />
         <input type="password" placeholder="Contraseña" />
-        <input class="btn" type="submit" value="REGISTRAR" />
+        <input type="password" placeholder="Verifique la contraseña">
       </form>
+       <button class="btn" type="submit">INGRESAR</button>
     </div>
     <p>
-      ¿Ya tienes una cuenta? ábrela <b><a href="index.html">aquí</a></b>
+      ¿Ya tienes una cuenta? ábrela
+      <b><a href="/frontend/pages/login.html">aquí</a></b>
     </p>
   </body>
 </html>

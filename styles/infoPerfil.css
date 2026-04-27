@@ -1,0 +1,11 @@
+#infoPerfil {
+  display: flex; /*pone todo el fila */
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 2%;
+ 
+}
+
+.user{
+    display: flex;
+}

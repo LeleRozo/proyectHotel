@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <script>
+// Función genérica para cargar cualquier componente en un contenedor por id
+function cargarComponente(idContenedor, rutaArchivo) {
+  fetch(rutaArchivo)
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById(idContenedor).innerHTML = html;
+    })
+    .catch(error => console.error("Error al cargar el componente:", error));
+}
+
+// Ejemplos de uso: llama a los componentes que quieras en esta vista
+cargarComponente("barraNav", "../components/barraNav.html");
+cargarComponente("infoPerfil", "../components/infoPerfil.html");
+</script>
+    <div id="barraNav"></div>
+
+    <div class="containerInicio">
+      <h2>INICIO</h2>
+      <div id="infoPerfil"></div>
+      <div class="cardsContainer">
+        <div class="card" id="card1">
+          <h5>Total de habitaciones</h5>
+          <p>
+            <img
+              class="icon dif"
+              src="/assets/icons/vacio.png"
+              alt="habitaciones"
+            />50
+          </p>
+        </div>
+        <div class="card" id="card2">
+          <h5>Habitaciones disponibles</h5>
+          <p>
+            <img
+              class="icon dif"
+              src="/assets/icons/vacio.png"
+              alt="disponibles"
+            />25
+          </p>
+        </div>
+        <div class="card" id="card3">
+          <h5>Habitaciones ocupadas</h5>
+          <p>
+            <img
+              class="icon dif"
+              src="/assets/icons/ocupado.png"
+              alt="ocupadas"
+            />23
+          </p>
+        </div>
+        <div class="card" id="card4">
+          <h5>En espera de limpieza</h5>
+          <p>
+            <img
+              class="icon dif"
+              src="/assets/icons/limpieza.png"
+              alt="porLimpiar"
+            />2
+          </p>
+        </div>
+      </div>
+
+      <div class="accionRap">
+        <h5>ACCIONES RÁPIDAS</h5>
+        <ul class="list">
+          <li>
+            <a href=""
+              ><img
+                class="icon"
+                id="icono"
+                src="/assets/icons/nuevoCliente.png"
+                alt="nuevoCliente"
+              />Registrar cliente</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img
+                class="icon"
+                id="icono"
+                src="/assets/icons/calendario.png"
+                alt="nuevaReserva"
+              />Nueva reserva</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img
+                class="icon"
+                id="icono"
+                src="/assets/icons/historial.png"
+                alt="histoServicio"
+              />Historial de servicios</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img
+                class="icon"
+                id="icono"
+                src="/assets/icons/historial.png"
+                alt="histoClientes"
+              />Historial de clientes</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </body>
+</html>

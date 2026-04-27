@@ -1,0 +1,14 @@
+.formularioR{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
+    margin: 50px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+}
