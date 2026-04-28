@@ -6,13 +6,47 @@
     <title>Clientes</title>
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/regClientes.css" />
-    <link rel="stylesheet" href="/styles/infoPerfil.css">
+    <link rel="stylesheet" href="/styles/infoPerfil.css" />
   </head>
   <body>
     <div id="barraNav"></div>
     <div class="containerClientes">
-        <div id="infoPerfil"></div>
+      <div id="infoPerfil"></div>
+      <h2>CLIENTES</h2>
+      <div class="cuadro">
+       <h5>INFORMACIÓN PERSONAL</h5>
+      <form action="" class="formRClientes">
+        <input type="text" placeholder="Nombres*" /><input type="text " placeholder="Apellidos*" />
+        <select name="documento" id="tipDocumento" class="tipoDoc">
+          <option value="">Tipo de documento</option>
+          <option value="cc">Cedula de ciudadanía</option>
+          <option value="ce">Cedula de extrangería</option>
+          <option value="ti">Targeta de identidad</option>
+        </select>
+        <input type="text" placeholder="Número de documento*"/><input type="text" placeholder="Telefono*" /><input type="text" placeholder="Ocupación"/>
+        <hr>
+        <h5>INFORMACIÓN DE ESTADÍA</h5>
+       <input type="date" name="fechaEnter" id="fEntrada" class="fecha">
+       <input type="date" name="fechaSalida" id="fSalida" class="fecha">
+       <select name="cantHuespedes" id="cantH">
+        <option value="escoger">Cantidad de Húespedes</option>
+        <option value="uno">1</option>
+        <option value="dos">2</option>
+        <option value="tres">3</option>
+        <option value="cuatro">4</option>
+        <option value="cinco">5</option>
         
+       </select>
+       <select name="tipoHab" id="tipoHab">
+        <option value="escogetipoH">Tipo de habitación</option>
+        <option value="sencillaA">Sencilla/ventilador</option>
+        <option value="sencillaV">Sencilla/aire</option>
+        <option value="dobleV">Doble/ventilador</option>
+        <option value="dobleA">Doble/aire</option>
+        <option value="doscamas">Dos camas</option>
+       </select>
+      </form>
+      </div>
     </div>
     <script src="/js/componentes.js"></script>
     <script>
