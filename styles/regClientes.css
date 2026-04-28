@@ -7,14 +7,58 @@
   ); /*calcula el ancho completo de la pantalla menos los 220px de la barra lateral*/
 }
 /*se separa con coma para agregar una nueva clase*/
-select, .fecha{
+select, label, .fecha, h5{
   color: rgb(120, 118, 118);
 }
+h5{
 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
 .cuadro{
+  padding-top: 3%;
   width: 100%;
+  height: auto;
   background-color: white;
+ 
 }
 input, select, .cuadro{
   box-shadow: 4px 4px 10px gray;
+}
+hr{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.estadia{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  
+}
+.dFechas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.botones{
+  margin-top: 5%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.boton{
+  background-color: white;
+  border: none;
+  box-shadow: 4px 4px 6px gray;
+  width: 15rem;
+  height: 30px;
+  border-radius: 16px;
+  transition: background-color 0.3s color 0.3;
+}
+.boton:hover{
+  background-color: #31405c ;
+  color: white;
 }
