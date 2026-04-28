@@ -1,3 +1,4 @@
+// Función genérica para cargar cualquier componente en un contenedor por id
 function cargarComponente(idContenedor, rutaArchivo) {
     fetch(rutaArchivo)
       .then((res) => res.text())

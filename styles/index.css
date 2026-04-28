@@ -1,4 +1,5 @@
 .containerInicio {
+  
   height: 100vh; /*alto de la pantalla*/
   margin-left: 220px; /*quitando el espacio donde va la barra lateral izquierda*/
   width: calc(

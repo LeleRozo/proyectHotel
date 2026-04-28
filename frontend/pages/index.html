@@ -8,26 +8,11 @@
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
   <body>
-    <script>
-// Función genérica para cargar cualquier componente en un contenedor por id
-function cargarComponente(idContenedor, rutaArchivo) {
-  fetch(rutaArchivo)
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById(idContenedor).innerHTML = html;
-    })
-    .catch(error => console.error("Error al cargar el componente:", error));
-}
-
-// Ejemplos de uso: llama a los componentes que quieras en esta vista
-cargarComponente("barraNav", "../components/barraNav.html");
-cargarComponente("infoPerfil", "../components/infoPerfil.html");
-</script>
     <div id="barraNav"></div>
-
     <div class="containerInicio">
-      <h2>INICIO</h2>
       <div id="infoPerfil"></div>
+      <h2>INICIO</h2>
+      
       <div class="cardsContainer">
         <div class="card" id="card1">
           <h5>Total de habitaciones</h5>
@@ -117,6 +102,10 @@ cargarComponente("infoPerfil", "../components/infoPerfil.html");
         </ul>
       </div>
     </div>
-    
+    <script src="/js/componentes.js"></script>
+    <script>
+      cargarComponente("barraNav", "../components/barraNav.html");
+      cargarComponente("infoPerfil", "../components/infoPerfil.html")
+    </script>
   </body>
 </html>
