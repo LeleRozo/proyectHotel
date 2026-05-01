@@ -1,0 +1,30 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    text-align: center;
+}
+.buscar{
+    margin-bottom: 3%;
+   
+}
+.contPrincipal{
+    padding: 2%;
+    background-color: white;
+    color: #31405c;
+}
+.contenedorTab{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+table, th, td{
+border-collapse: collapse; /*para que el borde sea de solo una linea y no doble linea*/
+border: 2px solid rgb(169, 167, 167); /*tamaño del ancho de la linea borde y color de la misma*/
+color: rgb(121, 118, 118);
+}
+th{
+   
+    width: 160px;
+    height: 40px; /*para tablas se usa medida en px*/
+}

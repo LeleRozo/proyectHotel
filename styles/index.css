@@ -6,6 +6,7 @@
     100% - 300px
   ); /*calcula el ancho completo de la pantalla menos los 220px de la barra lateral*/
 }
+
 h2 {
   margin-top: 5%;
 }

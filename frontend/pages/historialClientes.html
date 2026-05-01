@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/historialClientes.css" />
+  </head>
+  <body>
+    <div class="contPrincipal">
+      <h2>HISTORIAL DE CLIENTES</h2>
+      <input type="text" class="buscar" placeholder="Buscar..." />
+      
+      <!--tabla clientes-->
+      <div class="contenedorTab">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Documento</th>
+              <th>Teléfono</th>
+              <th>Fecha de entrada</th>
+              <th>Fecha de salída</th>
+              <th>Habitación</th>
+            </tr>
+          </thead>
+          <tbody id="tablaClientes"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/js/historialClientes.js"></script>
+  </body>
+</html>
