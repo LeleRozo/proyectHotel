@@ -7,18 +7,21 @@
 html {
   font-size: 100%; /* base = 16px */
 }
+html body{
+  height: auto;
+  min-height: 100%;
+}
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: white;
   background: url("/assets/fondoapp.png");
   background-repeat: no-repeat; /* Evita que se repita */
-  background-position: center center; /* Centra la imagen */
+  background-position: center fixed; /* Centra la imagen */
   background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
   display: flex;
   justify-content: center;
   align-items: center; /*centra horizontalmente*/
-  height: 100vh;
   flex-direction: column;
 }
 h2 {

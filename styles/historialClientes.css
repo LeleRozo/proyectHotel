@@ -1,17 +1,28 @@
 body{
+    margin: 0%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #31405c;
 }
+
 h2{
     text-align: center;
 }
+.atras{
+
+    color: white;
+}
 .buscar{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 200px;
     margin-bottom: 3%;
    
 }
 .contPrincipal{
+    display: flex;
+    flex-direction: column;
     padding: 2%;
-    background-color: white;
-    color: #31405c;
+    color:white;
 }
 .contenedorTab{
     display: flex;
@@ -19,12 +30,14 @@ h2{
     height: auto;
 }
 table, th, td{
+    margin: auto;
+    background-color: white;
 border-collapse: collapse; /*para que el borde sea de solo una linea y no doble linea*/
 border: 2px solid rgb(169, 167, 167); /*tamaño del ancho de la linea borde y color de la misma*/
 color: rgb(121, 118, 118);
 }
 th{
    
-    width: 160px;
+    width: 120px;
     height: 40px; /*para tablas se usa medida en px*/
 }

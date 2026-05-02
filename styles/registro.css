@@ -1,14 +1,13 @@
-.formularioR{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 1rem;
-    margin: 50px;
-}
-
-.btn{
-    text-align: center;
-}
-
 .container{
+   padding-top: 10%;
+    width: 100%;
+    height: 100vh;
     text-align: center;
+    justify-content: center;
 }
+.formularioR{
+   
+   margin-bottom: 5%;
+}
+
+
